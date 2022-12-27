@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        body{
+            background-color: khaki;
+            margin: 100px;
+            margin-left: 200px;
+            margin-right: 150px;
+            border: 3px solid black;
+            
+        }
+        h3{
+            
+            background-color: rgb(0, 0, 0);
+            border: 2px solid rgb(255, 255, 255);
+            text-align: center;
+            margin-left: 250px;
+            margin-right: 250px;
+        }
+        div{
+            
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+        <h3 style="color: white;"> Percentage Calculation</h3>
+       
+    <div id="1">
+    
+        <p>
+            <tr>
+            <td><label>Obtained Marks:</label></td>
+            <td><input type="text" id="o"></td>
+        </tr>
+        <tr>
+            <td><label>Total Marks:</label></td>
+            <td><input type="text" id="t"></td>
+        </tr>
+        <tr>
+            <td><label>Percentage:</label></td>
+            <td><input type="text" id="p"></td>
+        </tr>
+        <tr>
+            <td><button onclick="percnt()">Submit</button></td>
+        </tr>
+        </p>
+    </div>
+   <script>
+    function percnt()
+    {
+        document.getElementById('p').value=(document.getElementById('o').value/document.getElementById('t').value)*100
+    }
+   </script>
+    
+</body>
+</html>
